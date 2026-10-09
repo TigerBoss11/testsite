@@ -1,0 +1,168 @@
+uuid: 461f2fa8-e6fb-4d15-92bc-cfc524e12d4f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.product.field_brand
+    - field.field.node.product.field_camera
+    - field.field.node.product.field_display_size
+    - field.field.node.product.field_image
+    - field.field.node.product.field_processor
+    - field.field.node.product.field_ram
+    - field.field.node.product.field_storage
+    - node.type.product
+  module:
+    - feeds_log
+    - node
+third_party_settings:
+  feeds_log:
+    status: true
+    operations:
+      created: created
+      updated: updated
+      deleted: deleted
+      skipped: skipped
+      failed: failed
+      cleaned: cleaned
+    items:
+      created: created
+      updated: updated
+      deleted: deleted
+      skipped: skipped
+      failed: failed
+    source: true
+label: Товары
+id: product
+description: ''
+help: ''
+import_period: 3600
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: 'txt csv tsv xml opml'
+  directory: 'public://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ;
+  no_headers: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: product
+  langcode: ru
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _delete
+  skip_hash_check: false
+  skip_validation: false
+  skip_validation_types: {  }
+  authorize: true
+  revision: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  field_brand:
+    value: field_brand
+    label: field_brand
+    machine_name: field_brand
+    type: csv
+  title:
+    value: title
+    label: title
+    machine_name: title
+    type: csv
+  field_ram:
+    value: field_ram
+    label: field_ram
+    machine_name: field_ram
+    type: csv
+  field_storage:
+    value: field_storage
+    label: field_storage
+    machine_name: field_storage
+    type: csv
+  field_display_size:
+    value: field_display_size
+    label: field_display_size
+    machine_name: field_display_size
+    type: csv
+  field_camera:
+    value: field_camera
+    label: field_camera
+    machine_name: field_camera
+    type: csv
+  field_processor:
+    value: field_processor
+    label: field_processor
+    machine_name: field_processor
+    type: csv
+  field_image:
+    value: field_image
+    label: field_image
+    machine_name: field_image
+    type: csv
+mappings:
+  -
+    target: field_brand
+    map:
+      target_id: field_brand
+    settings:
+      language: null
+      reference_by: name
+      autocreate: false
+      autocreate_bundle: brands
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_ram
+    map:
+      value: field_ram
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_storage
+    map:
+      value: field_storage
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_display_size
+    map:
+      value: field_display_size
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_camera
+    map:
+      value: field_camera
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_processor
+    map:
+      value: field_processor
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_image
+    map:
+      target_id: field_image
+      alt: title
+      title: title
+    settings:
+      language: ''
+      reference_by: filename
+      autocreate: 0
+      existing: '1'
+      autocreate_bundle: false

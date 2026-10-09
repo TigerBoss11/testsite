@@ -1,0 +1,23 @@
+uuid: fa1daabe-d241-4164-ad05-14f70e45c0a8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_storage
+    - node.type.product
+id: node.product.field_storage
+field_name: field_storage
+entity_type: node
+bundle: product
+label: 'Объем встроенной памяти'
+description: 'Объем встроенной памяти для хранения данных'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ГБ
+field_type: integer

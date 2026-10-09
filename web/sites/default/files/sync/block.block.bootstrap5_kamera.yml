@@ -1,0 +1,24 @@
+uuid: 51125ee8-cd2e-4db9-8c53-ccc6603d6b96
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.field_camera
+  module:
+    - facets
+  theme:
+    - bootstrap5
+id: bootstrap5_kamera
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:field_camera'
+settings:
+  id: 'facet_block:field_camera'
+  label: Камера
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: bootstrap5_kamera
+visibility: {  }

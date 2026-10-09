@@ -1,0 +1,24 @@
+uuid: 1fd3360d-d81f-490a-a8fc-33026ced12ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.processor
+  module:
+    - facets
+  theme:
+    - bootstrap5
+id: bootstrap5_processor
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:processor'
+settings:
+  id: 'facet_block:processor'
+  label: Процессор
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: bootstrap5_processor
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: c97f8626-2151-4809-956e-ec626b99754a
+langcode: ru
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Токен
+description: null
+targetEntityType: block
+cache: true

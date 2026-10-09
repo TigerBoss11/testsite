@@ -1,0 +1,23 @@
+uuid: 4ba7cb6e-8cfb-4527-bb8f-b04e6b4df208
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ram
+    - node.type.product
+id: node.product.field_ram
+field_name: field_ram
+entity_type: node
+bundle: product
+label: 'Объем оперативной памяти'
+description: 'Объем оперативной памяти, влияет на многозадачность'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ГБ
+field_type: integer

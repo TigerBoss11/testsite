@@ -1,0 +1,49 @@
+uuid: 070cc777-1203-465f-99e5-78aeb3f07c42
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.feeds_item
+    - field.field.node.product.field_brand
+    - field.field.node.product.field_camera
+    - field.field.node.product.field_display_size
+    - field.field.node.product.field_image
+    - field.field.node.product.field_processor
+    - field.field.node.product.field_ram
+    - field.field.node.product.field_storage
+    - image.style.medium
+    - node.type.product
+  module:
+    - image
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_brand: true
+  field_camera: true
+  field_display_size: true
+  field_processor: true
+  field_ram: true
+  field_storage: true
+  langcode: true

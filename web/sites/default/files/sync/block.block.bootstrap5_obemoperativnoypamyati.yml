@@ -1,0 +1,24 @@
+uuid: 679e2dd5-f14d-4305-9bfa-5445bc117a14
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.ram
+  module:
+    - facets
+  theme:
+    - bootstrap5
+id: bootstrap5_obemoperativnoypamyati
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:ram'
+settings:
+  id: 'facet_block:ram'
+  label: 'Объем оперативной памяти'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: bootstrap5_obemoperativnoypamyati
+visibility: {  }

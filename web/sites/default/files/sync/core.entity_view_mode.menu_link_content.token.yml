@@ -1,0 +1,11 @@
+uuid: ee51832c-edce-4317-afc0-6b1f0fa7696e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.token
+label: Токен
+description: null
+targetEntityType: menu_link_content
+cache: true

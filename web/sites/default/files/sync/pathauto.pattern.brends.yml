@@ -1,0 +1,22 @@
+uuid: b053a8ab-c31c-440b-81a1-023062014401
+langcode: ru
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: brends
+label: Бренды
+type: 'canonical_entities:taxonomy_term'
+pattern: 'catalog/[term:name]'
+selection_criteria:
+  bba8be91-8688-470a-8369-2b7962e1e2d3:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: bba8be91-8688-470a-8369-2b7962e1e2d3
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      brands: brands
+selection_logic: and
+weight: 0
+relationships: {  }

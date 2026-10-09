@@ -1,0 +1,9 @@
+title,brand,ram,storage,display_size,camera,processor,image
+iPhone 15 Pro,Apple,8,256,6.1,48 Triple,Apple A17 Pro,iphone15.jpg
+iPhone 14,Apple,6,128,6.1,12 Dual,Apple A15 Bionic,iphone14.jpg
+iPhone 15 Pro Max,Apple,8,512,6.7,48 Triple,Apple A17 Pro,iphone15pro.jpg
+Samsung Galaxy S23,Samsung,8,256,6.4,50 Triple,Snapdragon 8 Gen 2,galaxy_s23.jpg
+Samsung Galaxy A54,Samsung,6,128,6.4,50 Triple,Exynos 1380,galaxy_a54.jpg
+Samsung Galaxy S23 Ultra,Samsung,12,512,6.8,200 Quad,Snapdragon 8 Gen 2,galaxy_s23u.jpg
+Xiaomi 13T,Xiaomi,12,512,6.67,50 Triple,MediaTek Dimensity 8200,xiaomi13t.jpg
+Xiaomi 13 Pro,Xiaomi,12,256,6.73,50 Triple,Snapdragon 8 Gen 2,xiaomi13pro.jpg

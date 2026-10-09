@@ -1,0 +1,9 @@
+uuid: 8b0411f0-6926-4d61-8dac-d169607365bd
+langcode: ru
+status: true
+dependencies: {  }
+name: brands
+vid: brands
+description: null
+weight: 0
+new_revision: false

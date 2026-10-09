@@ -1,0 +1,15 @@
+uuid: ac22c523-d8f9-41b6-a59d-01e882e2fc20
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: default_server
+name: 'Default Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: bigram

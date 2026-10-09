@@ -1,0 +1,10 @@
+uuid: a3f482ba-f31e-4dae-87a6-64a7690f08d3
+langcode: ru
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pQP5iQy4SdhAMVcjDUncCfkJmTofnHVtXrsMzx4k6Yk
+id: basic
+label: 'Базовый блок'
+revision: false
+description: 'Базовый блок, содержащий заголовок и текст.'

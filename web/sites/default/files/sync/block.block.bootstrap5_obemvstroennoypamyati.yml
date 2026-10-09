@@ -1,0 +1,24 @@
+uuid: ec3a5a7b-3269-4379-bfbb-341a69e22448
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.storage
+  module:
+    - facets
+  theme:
+    - bootstrap5
+id: bootstrap5_obemvstroennoypamyati
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:storage'
+settings:
+  id: 'facet_block:storage'
+  label: 'Объем встроенной памяти'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: bootstrap5_obemvstroennoypamyati
+visibility: {  }

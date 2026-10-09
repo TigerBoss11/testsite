@@ -1,0 +1,24 @@
+uuid: b8c637be-5c21-40ef-84ba-cdf5f928a783
+langcode: ru
+status: true
+dependencies:
+  config:
+    - facets.facet.brand
+  module:
+    - facets
+  theme:
+    - bootstrap5
+id: bootstrap5_brend
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:brand'
+settings:
+  id: 'facet_block:brand'
+  label: Бренд
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: bootstrap5_brend
+visibility: {  }
